@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\main">
+      <UniqueIdentifier>{33e21cfd-3a23-482f-8775-e6c1a3c1738c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Enemy">
+      <UniqueIdentifier>{f091b7d7-80cf-47a9-aabc-1363f35a8d86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\HUD %28UI%29">
+      <UniqueIdentifier>{0d4aabd8-408c-4e4b-926f-567a4bf6edff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameManager">
+      <UniqueIdentifier>{a15012d3-1efa-4023-abb1-e3e71c28bab6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\EnemyFactory">
+      <UniqueIdentifier>{b975fb1f-703f-4910-8906-7768e9a2b1d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\LeaderboardManager">
+      <UniqueIdentifier>{7da4d10e-3709-41a5-9a54-b637fc89748a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CommandPattern">
+      <UniqueIdentifier>{c8cb9541-ce0d-4133-9ca2-2706228fa616}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ScoreManager">
+      <UniqueIdentifier>{2a95980f-d68b-473e-9567-17de05559a23}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files\main</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager.cpp">
+      <Filter>Source Files\GameManager</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyFactory.cpp">
+      <Filter>Source Files\EnemyFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>Source Files\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="HUD.cpp">
+      <Filter>Source Files\HUD %28UI%29</Filter>
+    </ClCompile>
+    <ClCompile Include="ScoreManager.cpp">
+      <Filter>Source Files\ScoreManager</Filter>
+    </ClCompile>
+    <ClCompile Include="LeaderboardManagercpp">
+      <Filter>Source Files\LeaderboardManager</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameManager.h">
+      <Filter>Source Files\GameManager</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyFactory.h">
+      <Filter>Source Files\EnemyFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>Source Files\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="HUD.h">
+      <Filter>Source Files\HUD %28UI%29</Filter>
+    </ClInclude>
+    <ClInclude Include="ScoreManager.h">
+      <Filter>Source Files\ScoreManager</Filter>
+    </ClInclude>
+    <ClInclude Include="LeaderboardManager.h">
+      <Filter>Source Files\LeaderboardManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Command.h">
+      <Filter>Source Files\CommandPattern</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

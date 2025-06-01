@@ -1,0 +1,39 @@
+// LeaderboardManager.cpp
+#include "LeaderboardManager.h"
+#include <fstream>
+#include <algorithm>
+
+LeaderboardManager* LeaderboardManager::instance = nullptr;
+
+LeaderboardManager::LeaderboardManager() {
+    LoadScores();
+}
+
+LeaderboardManager* LeaderboardManager::GetInstance() {
+    if (!instance) instance = new LeaderboardManager();
+    return instance;
+}
+
+void LeaderboardManager::LoadScores() {
+    scores.clear();
+    std::ifstream in(filename);
+    int s;
+    while (in >> s) scores.push_back(s);
+    in.close();
+    std::sort(scores.rbegin(), scores.rend());
+    if (scores.size() > 5) scores.resize(5);
+}
+
+void LeaderboardManager::SaveScore(int score) {
+    scores.push_back(score);
+    std::sort(scores.rbegin(), scores.rend());
+    if (scores.size() > 5) scores.resize(5);
+
+    std::ofstream out(filename);
+    for (int s : scores) out << s << std::endl;
+    out.close();
+}
+
+const std::vector<int>& LeaderboardManager::GetScores() const {
+    return scores;
+}
